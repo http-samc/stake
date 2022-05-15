@@ -1,9 +1,19 @@
 html,
-body {
+body,
+#__next {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#page {
+  max-width: 1000px;
+  width: 100%;
 }
 
 a {
@@ -13,4 +23,15 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+link:hover {
+  text-decoration: underline;
+}
+/* Custom Layout Classes */
+.flx-h-sb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }

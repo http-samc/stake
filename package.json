@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@geist-ui/core": "^2.3.8",
+    "@geist-ui/icons": "^1.0.2",
+    "coinkey": "^3.0.0",
+    "firebase": "^9.8.1",
+    "ledger-balance": "^0.9.3",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-firebase-hooks": "^5.0.3"
   },
   "devDependencies": {
     "eslint": "8.15.0",
