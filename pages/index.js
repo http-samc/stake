@@ -2,6 +2,7 @@ import { Avatar, Text, Button, Divider, Spacer } from '@geist-ui/core';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth, signInWithGoogle, logout } from "../utils/firebase";
 import { Mail } from '@geist-ui/icons';
+import { useEffect } from 'react';
 
 import Dashboard from '../components/Dashboard';
 
@@ -32,7 +33,10 @@ export default function Home() {
         {
           auth.currentUser
             ? <Dashboard user={auth.currentUser} />
-            : <Text>Sign in to get started</Text>
+            : <div>
+              <Text h1 style={{ fontSize: 200 }}>Welcome to Stake.</Text>
+              <Text type='success'><span onClick={signInWithGoogle} style={{ fontWeight: 'bold', textDecoration: 'underline' }}>Sign in</span> to get started.</Text>
+            </div>
         }
       </section>
     </div>
